@@ -4,6 +4,8 @@
 
 This project demonstrates the stabilization of a pendulum system using adaptive control techniques. The simulation explores different control strategies, including energy-based control and adaptive parameter estimation.
 
+The derivation is described in [derivation.png](./derivation.png).
+
 ## System Dynamics
 
 The pendulum system with friction is modeled by the following equations:

@@ -8,6 +8,7 @@ dependencies = [
     "gymnasium==0.29.1",
     "moviepy>=2.1.2",
     "pygame>=2.6.1",
+    "tyro>=0.9.19",
 ]
 
 

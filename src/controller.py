@@ -11,6 +11,7 @@ class ControllerNotAdaptive:
         pd_coeffs: np.ndarray = np.array([0.6, 0.2]),
         switch_loc: float = np.cos(np.pi / 10),
         env_id: str = "PendulumQuanser-v0",
+        friction_coeff: float = 0.08,
     ):
         super().__init__()
         self.gain = gain
@@ -18,6 +19,7 @@ class ControllerNotAdaptive:
         self.action_max = action_max
         self.switch_loc = switch_loc
         self.pd_coeffs = pd_coeffs
+        self.friction_coeff = friction_coeff
         self.env = gym.make(env_id)
 
     def get_action(self, observation: np.ndarray) -> np.ndarray:
@@ -25,7 +27,7 @@ class ControllerNotAdaptive:
             self.env.m,
             self.env.g,
             self.env.l,
-            self.env.friction_coeff,
+            self.friction_coeff,
         )
 
         cos_angle = observation[0]

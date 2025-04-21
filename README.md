@@ -65,11 +65,10 @@ uv run eval.py --eval-type adaptive
 
 The simulations demonstrate:
 ### Standard energy-based control Standard energy-based control fails when friction is present but not accounted for
-
-
 <p align="center">
-  <img src="videos/adaptive/output.gif" alt="failed">
+  <img src="videos/energy_based_friction_coef_0.0/output.gif" alt="succed_eb">
 </p>
+
 
 ### Energy-based control succeeds when the exact friction coefficient is known
 <p align="center">
@@ -79,5 +78,5 @@ The simulations demonstrate:
 ### Adaptive control successfully stabilizes the pendulum by learning the friction coefficient during operation
 
 <p align="center">
-  <img src="videos/energy_based_friction_coef_0.0/output.gif" alt="succed_eb">
+  <img src="videos/adaptive/output.gif" alt="failed">
 </p>

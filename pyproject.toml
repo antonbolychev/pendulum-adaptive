@@ -15,7 +15,6 @@ dependencies = [
 [tool.poetry]
 packages = [
     { include = "src" },
-    { include = "run" }
 ]
 
 [build-system]

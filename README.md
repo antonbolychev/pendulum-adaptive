@@ -5,10 +5,8 @@
 We consider the system
 
 $$
-\dot{\vartheta} = \omega \quad \dot{\omega} = -\frac{3g}{2l}\sin(\vartheta) + \frac{3}{ml^2}\tau
+\dot{\vartheta} = \omega \quad \dot{\omega} = -\frac{3g}{2l}\sin(\vartheta) + \frac{3}{ml^2}\tau - C \omega^2 \text{sign}(\omega)
 $$
-
-## 🚀 Quick Start
 
 ### Prerequisites
 
@@ -24,10 +22,10 @@ To run the :
 
 ```bash
 # This should fail to stabiolize due to the fact that default pendulum system has friction
-uv run run/eval.py --eval-type energy_based --friction-coeff=0.0
+uv run eval.py --eval-type energy_based --friction-coeff=0.0
 # This now stabilizes due to the fact that controller now awares of friction coeff
-uv run run/eval.py --eval-type energy_based --friction-coeff=0.08
+uv run eval.py --eval-type energy_based --friction-coeff=0.08
 # This now will stabailize because friction coeff is adapted in online setting
-uv run run/eval.py --eval-type adaptive
+uv run eval.py --eval-type adaptive
 ```
 

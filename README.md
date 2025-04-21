@@ -79,5 +79,5 @@ The simulations demonstrate:
 ### Adaptive control successfully stabilizes the pendulum by learning the friction coefficient during operation
 
 <p align="center">
-  <img src="videos/energy_based_friction_coef_0.00/output.gif" alt="succed_eb">
+  <img src="videos/energy_based_friction_coef_0.0/output.gif" alt="succed_eb">
 </p>

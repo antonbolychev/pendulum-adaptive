@@ -1,4 +1,4 @@
-```markdown
+
 ## Adaptive‑control derivation (pendulum with quadratic friction)
 
 ### 1. Plant model
@@ -52,4 +52,3 @@ $$
 \boxed{\dot{L}=-k\lvert\omega\rvert(E-E_{0})}
 $$
 Hence $L$ is non‑increasing; the energy error $\varepsilon_E$ and the parameter error $\tilde C$ converge to zero.
-```
